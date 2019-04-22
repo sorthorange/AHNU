@@ -39,6 +39,7 @@ public class MyStarPanel extends JPanel implements Runnable{
             int G=(int)(Math.random()*255);
             int B=(int)(Math.random()*255);
             Color randcolor = new Color(R,G,B);
+
             g.setColor(randcolor);
             g.drawString("♂",xx[i],yy[i]);
         }
