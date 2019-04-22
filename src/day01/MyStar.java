@@ -6,10 +6,11 @@ public class MyStar {
     public static void main(String [] args)
     {
         JFrame frame = new JFrame();
-        MyStarPanel panel = new MyStarPanel();
-        frame.add(panel);
+        //MyStarPanel panel = new MyStarPanel();
+        KTXL k = new KTXL();
+        frame.add(k);
 
-        Thread t= new Thread(panel);
+        Thread t= new Thread(k);
         t.start();
 
         frame.setSize(800,600);//设置窗口大小
