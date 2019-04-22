@@ -14,6 +14,7 @@ public class MyStarPanel extends JPanel implements Runnable{
         {
             xx[i]=(int)(Math.random()*800);
             yy[i]=(int)(Math.random()*600);
+
         }
     }
 
@@ -22,6 +23,10 @@ public class MyStarPanel extends JPanel implements Runnable{
     {
         super.paint(g);
         this.setBackground(Color.BLACK);
+
+        g.setColor(Color.YELLOW);
+        g.fillOval(100,100,100,100);
+
         Font ft = new Font("微软雅黑",Font.BOLD,28);//设置大小
         g.setFont(ft);
         //g.setColor(Color.);
@@ -46,7 +51,23 @@ public class MyStarPanel extends JPanel implements Runnable{
         while(true)
         {
             //业务执行
+            for(int i=0;i<100;i++)
+            {
+                xx[i]++;
+                yy[i]++;
+                if(xx[i]>800)
+                    xx[i]=0;
+                if(yy[i]>600)
+                    yy[i]=0;
+            }
             //睡眠方法
+            try
+            {
+                Thread.sleep(10);
+            }catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
             //调用重绘方法
             repaint();
         }
