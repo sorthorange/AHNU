@@ -157,7 +157,6 @@ public class MyTomPanel extends JPanel implements Runnable,MouseListener {
         g.drawImage(fart_button,402,350,60,60,null);
         g.drawImage(pie_button,402,450,60,60,null);
         g.drawImage(scratch_button,402,550,60,60,null);
-
     }
 
     @Override
@@ -248,32 +247,32 @@ public class MyTomPanel extends JPanel implements Runnable,MouseListener {
     public void mousePressed(MouseEvent e) {
         int mx = e.getX();
         int my = e.getY();
-        if(mx>50&&mx<50+60&&my>350&&my<350+60)
+        if(mx>40&&mx<60+60&&my>340&&my<360+60)
         {
             type=1;
             count=count_re[type];
         }
-        if(mx>50&&mx<50+60&&my>450&&my<450+60)
+        if(mx>40&&mx<60+60&&my>440&&my<460+60)
         {
             type=2;
             count=count_re[type];
         }
-        if(mx>50&&mx<50+60&&my>550&&my<550+60)
+        if(mx>40&&mx<60+60&&my>540&&my<560+60)
         {
             type=3;
             count=count_re[type];
         }
-        if(mx>402&&mx<402+60&&my>350&&my<350+60)
+        if(mx>392&&mx<412+60&&my>340&&my<360+60)
         {
             type=4;
             count=count_re[type];
         }
-        if(mx>402&&mx<402+60&&my>450&&my<450+60)
+        if(mx>392&&mx<412+60&&my>440&&my<460+60)
         {
             type=5;
             count=count_re[type];
         }
-        if(mx>402&&mx<402+60&&my>550&&my<550+60)
+        if(mx>392&&mx<412+60&&my>540&&my<560+60)
         {
             type=6;
             count=count_re[type];
