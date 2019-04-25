@@ -19,6 +19,7 @@ public class MyGamePanel extends JPanel implements Runnable,MouseMotionListener 
     private Bullet bs[]={};
 
 
+
     static {
         try {
             back=ImageIO.read(MyGamePanel.class.getResource("img/background.png"));
