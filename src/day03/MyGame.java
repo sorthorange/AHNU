@@ -1,17 +1,18 @@
-package day02;
+package day03;
 
 import javax.swing.*;
 
-public class MyTom {
+public class MyGame {
     public static void main(String[]args)
     {
         JFrame frame = new JFrame("憨批");
-        MyTomPanel panel = new MyTomPanel();
+        MyGamePanel panel = new MyGamePanel();
         frame.add(panel);
         /*添加线程关联*/
         Thread t = new Thread(panel);
         t.start();
-        frame.addMouseListener(panel);
+        //鼠标监听
+        frame.addMouseMotionListener(panel);
         //设置窗口大小
         frame.setSize(512,768);
         //设置窗口关闭模式

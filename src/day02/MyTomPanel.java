@@ -250,56 +250,67 @@ public class MyTomPanel extends JPanel implements Runnable,MouseListener {
         if(mx>40&&mx<60+60&&my>340&&my<360+60)
         {
             type=1;
+            index=0;
             count=count_re[type];
         }
         if(mx>40&&mx<60+60&&my>440&&my<460+60)
         {
             type=2;
+            index=0;
             count=count_re[type];
         }
         if(mx>40&&mx<60+60&&my>540&&my<560+60)
         {
             type=3;
+            index=0;
             count=count_re[type];
         }
         if(mx>392&&mx<412+60&&my>340&&my<360+60)
         {
             type=4;
+            index=0;
             count=count_re[type];
         }
         if(mx>392&&mx<412+60&&my>440&&my<460+60)
         {
             type=5;
+            index=0;
             count=count_re[type];
         }
         if(mx>392&&mx<412+60&&my>540&&my<560+60)
         {
             type=6;
+            index=0;
             count=count_re[type];
         }
         if(mx>330&&mx<330+65&&my>560&&my<560+135)
         {
             type=7;
+            index=0;
             count=count_re[type];
         }
         if(mx>256&&mx<256+65&&my>675&&my<675+68)
         {
             type=8;
+            index=0;
             count=count_re[type];
         }
         if(mx>256-65&&mx<256&&my>675&&my<675+68)
         {
             type=9;
+            index=0;
             count=count_re[type];
         }
         if(mx>115&&mx<115+282&&my>140&&my<140+250)
         {
             type=10;
+            index=0;
             count=count_re[type];
         }
         if(mx>191&&mx<191+130&&my>560&&my<560+100)
         {
             type=11;
+            index=0;
             count=count_re[type];
         }
 
