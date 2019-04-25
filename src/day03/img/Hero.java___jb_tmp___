@@ -1,0 +1,30 @@
+package day03.img;
+
+import day03.FlyObject;
+import day03.MyGamePanel;
+
+public class Hero extends FlyObject {
+
+    private int index;
+
+    public Hero()
+    {
+        index=0;
+        this.img=MyGamePanel.ws[index];
+        this.heigth=this.img.getHeight();
+        this.width=this.img.getWidth();
+        this.x=200;
+        this.y=500;
+    }
+
+    @Override
+    public void step() {
+        this.index++;
+        this.img=MyGamePanel.ws[index/10%MyGamePanel.ws.length];
+    }
+
+    @Override
+    public boolean OutOfBounds() {
+        return false;
+    }
+}
