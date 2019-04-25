@@ -15,6 +15,7 @@ public class MyGame {
         frame.addMouseMotionListener(panel);
         //设置窗口大小
         frame.setSize(512,768);
+        frame.setResizable(false);
         //设置窗口关闭模式
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //设置窗口居中
